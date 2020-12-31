@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domo", "Domo\Domo.csproj", "{7536E3DD-2110-4367-BD26-E7F7743DA134}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task", "Task", "{81ECE1D5-BCDF-40E0-8841-0B5FD3BF49DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domo.Task.Application", "Task\Domo.Task.Application\Domo.Task.Application.csproj", "{0B68B9D8-1D12-447D-B1A6-5DA4807FFDAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domo.Task.Contract", "Task\Domo.Task.Contract\Domo.Task.Contract.csproj", "{C20D0372-8AD4-49DF-95B7-D20772E3F6A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domo.Task.Domain", "Task\Domo.Task.Domain\Domo.Task.Domain.csproj", "{C714F5C7-20D9-431A-AF37-F33F5166FA7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domo.Task.Infrastructure", "Task\Domo.Task.Infrastructure\Domo.Task.Infrastructure.csproj", "{DDDADC0A-3336-4FEA-B373-106D7B957F4C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7536E3DD-2110-4367-BD26-E7F7743DA134}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7536E3DD-2110-4367-BD26-E7F7743DA134}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7536E3DD-2110-4367-BD26-E7F7743DA134}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7536E3DD-2110-4367-BD26-E7F7743DA134}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B68B9D8-1D12-447D-B1A6-5DA4807FFDAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B68B9D8-1D12-447D-B1A6-5DA4807FFDAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B68B9D8-1D12-447D-B1A6-5DA4807FFDAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B68B9D8-1D12-447D-B1A6-5DA4807FFDAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C20D0372-8AD4-49DF-95B7-D20772E3F6A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C20D0372-8AD4-49DF-95B7-D20772E3F6A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C20D0372-8AD4-49DF-95B7-D20772E3F6A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C20D0372-8AD4-49DF-95B7-D20772E3F6A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C714F5C7-20D9-431A-AF37-F33F5166FA7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C714F5C7-20D9-431A-AF37-F33F5166FA7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C714F5C7-20D9-431A-AF37-F33F5166FA7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C714F5C7-20D9-431A-AF37-F33F5166FA7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDDADC0A-3336-4FEA-B373-106D7B957F4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDDADC0A-3336-4FEA-B373-106D7B957F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDDADC0A-3336-4FEA-B373-106D7B957F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDDADC0A-3336-4FEA-B373-106D7B957F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0B68B9D8-1D12-447D-B1A6-5DA4807FFDAD} = {81ECE1D5-BCDF-40E0-8841-0B5FD3BF49DA}
+		{C20D0372-8AD4-49DF-95B7-D20772E3F6A3} = {81ECE1D5-BCDF-40E0-8841-0B5FD3BF49DA}
+		{C714F5C7-20D9-431A-AF37-F33F5166FA7F} = {81ECE1D5-BCDF-40E0-8841-0B5FD3BF49DA}
+		{DDDADC0A-3336-4FEA-B373-106D7B957F4C} = {81ECE1D5-BCDF-40E0-8841-0B5FD3BF49DA}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBE64367-88FA-4335-B4D9-F999C3BD62DE}
+	EndGlobalSection
+EndGlobal
