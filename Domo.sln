@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domo", "Domo\Domo.csproj", "{7536E3DD-2110-4367-BD26-E7F7743DA134}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domo", "Domo\Domo.csproj", "{7536E3DD-2110-4367-BD26-E7F7743DA134}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task", "Task", "{81ECE1D5-BCDF-40E0-8841-0B5FD3BF49DA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domo.Task.Application", "Task\Domo.Task.Application\Domo.Task.Application.csproj", "{0B68B9D8-1D12-447D-B1A6-5DA4807FFDAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domo.Task.Application", "Task\Domo.Task.Application\Domo.Task.Application.csproj", "{0B68B9D8-1D12-447D-B1A6-5DA4807FFDAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domo.Task.Contract", "Task\Domo.Task.Contract\Domo.Task.Contract.csproj", "{C20D0372-8AD4-49DF-95B7-D20772E3F6A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domo.Task.Contract", "Task\Domo.Task.Contract\Domo.Task.Contract.csproj", "{C20D0372-8AD4-49DF-95B7-D20772E3F6A3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domo.Task.Domain", "Task\Domo.Task.Domain\Domo.Task.Domain.csproj", "{C714F5C7-20D9-431A-AF37-F33F5166FA7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domo.Task.Domain", "Task\Domo.Task.Domain\Domo.Task.Domain.csproj", "{C714F5C7-20D9-431A-AF37-F33F5166FA7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domo.Task.Infrastructure", "Task\Domo.Task.Infrastructure\Domo.Task.Infrastructure.csproj", "{DDDADC0A-3336-4FEA-B373-106D7B957F4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domo.Task.Infrastructure", "Task\Domo.Task.Infrastructure\Domo.Task.Infrastructure.csproj", "{DDDADC0A-3336-4FEA-B373-106D7B957F4C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{F7B3D128-68EA-4B4E-A0CE-84D5E4FA134E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{DDDADC0A-3336-4FEA-B373-106D7B957F4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDDADC0A-3336-4FEA-B373-106D7B957F4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDDADC0A-3336-4FEA-B373-106D7B957F4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7B3D128-68EA-4B4E-A0CE-84D5E4FA134E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7B3D128-68EA-4B4E-A0CE-84D5E4FA134E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7B3D128-68EA-4B4E-A0CE-84D5E4FA134E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7B3D128-68EA-4B4E-A0CE-84D5E4FA134E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

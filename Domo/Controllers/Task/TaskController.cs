@@ -18,7 +18,7 @@ namespace Domo.Controllers.Task
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            return Ok();
+            return Ok("ASD");
         }
     }
 }
