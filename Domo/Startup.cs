@@ -37,12 +37,15 @@ namespace Domo
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseForwardedHeaders();
+            app.UsePathBase("/api");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Domo v1"));
             }
+
+            app.UseSwaggerDocumentation();
 
             app.UseHttpsRedirection();
 
@@ -54,6 +57,31 @@ namespace Domo
             {
                 endpoints.MapControllers();
             });
+        }
+        
+    }
+
+        internal static class SwaggerExtensions
+    {
+        internal static IApplicationBuilder UseSwaggerDocumentation(this IApplicationBuilder app)
+        {
+            app.UseSwagger(c =>
+            {
+                c.RouteTemplate = "MyTestService/swagger/{documentName}/swagger.json";  
+            });
+
+            app.UseSwaggerUI(c =>
+            {
+                //c.SwaggerEndpoint("v1.0/swagger.json", "Domo API");
+                c.SwaggerEndpoint("/MyTestService/swagger/v1/swagger.json", "TestService");
+                //c.OAuthClientId("Swagger.UI");
+               // c.OAuthAppName("DOMO API - Swagger");
+                //c.OAuthClientSecret("mysecret");
+                //c.OAuthUsePkce();
+                //c.OAuthUseBasicAuthenticationWithAccessCodeGrant();
+            });
+
+            return app;
         }
     }
 }

@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  domo:
-    image: ${DOCKER_REGISTRY-}domo
-    build:
-      context: .
-      dockerfile: Domo/Dockerfile
