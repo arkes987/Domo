@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  domo:
+    image: ${DOCKER_REGISTRY-}domo
+    ports:
+      - "5000:80"
+      - "5001:443"
+    build:
+      context: .
+      dockerfile: Domo/Dockerfile
+    environment: 
+      - ASPNETCORE_ValidateSSL=false
+      - ASPNETCORE_ENVIRONMENT=Release
